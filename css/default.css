@@ -1,0 +1,961 @@
+
+
+
+
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url('../fonts/poppins/Poppins-SemiBold.ttf'); 
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url('../fonts/montserrat/Montserrat-Bold.ttf'); 
+}
+
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url('../fonts/montserrat/Montserrat-SemiBold.ttf'); 
+}
+
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url('../fonts/montserrat/Montserrat-Regular.ttf'); 
+}
+
+
+/*//////////////////////////////////////////////////////////////////*/
+ /*??????????????????/?/?/???????//???//????///////////?????????????????????????????????///////////????????????????????????/////????????*/
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+	font-family: Poppins-Regular, sans-serif;
+}
+
+
+a {
+	font-family: Poppins-Regular;
+	font-size: 14px;
+	line-height: 1.7;
+	color: #666666;
+	margin: 0px;
+        padding : 0px;
+	
+}
+
+a:focus {
+	outline: none !important;
+}
+
+a:hover {
+	text-decoration: none;
+  color: #6675df;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0px;
+}
+
+p {
+	font-family: Poppins-Regular;
+	font-size: 14px;
+	line-height: 1.7;
+	color: white;
+	margin: 0px;
+}
+
+ul, li {
+	margin: 0px;
+	list-style-type: none;
+}
+
+input {
+	outline: none;
+	border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+
+
+
+label {
+  display: block;
+  margin: 0;
+}
+ /*??????????????????/?/?/???????//???//????///////////?????????????????????????????????///////////????????????????????????/////????????*/
+
+
+
+/*========================88=========== Text forget password ============88============================*/
+
+.txt1 { 
+                     
+  width: 100%;
+  display: block;
+  font-family: sans-serif;
+  font-size: 15px;
+  color: white;
+  text-align: right;
+  padding-bottom:40px;}
+
+
+
+
+.limiter { /*////////////////حدود الصفحة بالكامل /////////////////////////*/
+  width: 100%;
+  margin: 5px ;
+}
+
+
+.wrap-login100 { 
+  width: 100%;  /*///////////////حدود الصحه من ايمين////////////////////////*/
+   
+  overflow: hidden;
+  
+  display: -moz-box;
+ 
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  flex-direction: row-reverse;}
+ 
+
+.login100-more {          /*////////////////حدود الصفحه من اليسار////////////////////////*/        
+  width: calc(100% - 560px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+
+.login100-more::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.1);
+}
+
+.login100-form {              /*========================================form حدود======================================= */
+  width: 560px;
+  min-height: 100vh;
+   background-color:#282828;
+  padding: 173px 55px 55px 55px;
+}
+
+.login100-form-title { /*----------------------------login to continw------------------------*/
+  width: 100%;
+  display: block;
+  font-family: sans-serif;
+  font-size: 40px;
+  color: white;
+  line-height: 1;
+  text-align: center;
+padding-bottom:20px;
+margin-top:0px;}
+
+.login100-form {             
+  width: 560px;
+  min-height: 100vh;
+   background-color:#282828;
+  padding: 173px 55px 55px 55px;
+}
+.wrap-input100 {/*============================== user دخال البيانات ========================================= */
+  
+  display: -moz-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  width: 100%;
+  height: 80px;
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.label-input100 { /*============================== userداخل بيانات الtext ======================================= */
+  font-family: Montserrat-Regular;
+  font-size: 18px;
+  color: white;
+  line-height: 1.2;
+  display: block;
+  position: absolute;
+  pointer-events: none;
+  width: 100%;
+  padding-left: 24px;
+  left: 0;
+  top: 30px;
+  transition: all 0.4s;}
+
+.input100 { /*============================== userكتابه الtext ======================================= */
+  display: block;
+  width: 100%;
+  background: transparent;
+  font-family: Montserrat-Regular;
+  font-size: 18px;
+  color: #555555;
+  line-height: 1.2;
+  padding: 10px 26px;
+}
+
+input.input100 {
+  height: 100%;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+ .but { 
+        width: 100%; 
+        padding: 8px; 
+        color: white; 
+        background: none #191970; 
+        border: none; 
+        border-radius: 6px; 
+        font-size: 20px; 
+        cursor: pointer; 
+        margin: 12px 30px; 
+    } 
+ /*??????????????????/?/?/???????//???//????///////////?????????????????????????????????///////////????????????????????????/////????????*/
+ /*??????????????????/?/?/???????//???//????///////////?????????????????????????????????///////////????????????????????????/////????????*/
+ .focus-input100 {
+  position: absolute;
+  display: block;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  top: -1px;
+  left: -1px;
+  pointer-events: none;
+  border:5px solid white;
+  border-radius: 60px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transform: scaleX(1.1) scaleY(1.3);
+  -moz-transform: scaleX(1.1) scaleY(1.3);
+  -ms-transform: scaleX(1.1) scaleY(1.3);
+  -o-transform: scaleX(1.1) scaleY(1.3);
+  transform: scaleX(1.1) scaleY(1.3);}
+
+.input100:focus + .focus-input100 {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);}
+.eff-focus-selection {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);}
+  /*??????????????????/?/?/???????//???//????///////////?????????????????????????????????///////////????????????????????????/////????????*/
+   /*??????????????????/?/?/???????//???//????///////////?????????????????????????????????///////////????????????????????????/////????????*/
+.input100:focus { /*===========================الشكل عند الادخال======================================*/
+  height: 60px;
+}
+
+.input100:focus + .focus-input100 + .label-input100 {
+  top: 14px;
+  font-size: 13px;
+}
+
+.has-val {
+  height: 48px !important;
+}
+
+.has-val + .focus-input100 + .label-input100 {
+  top: 14px;
+  font-size: 13px;
+}
+
+/*===========================text check box=======================================*/
+
+.input-checkbox100 {
+  display: none;
+}
+
+.label-checkbox100 {  /*-------------------------Remember me----------------------------------*/
+
+  font-family: Poppins-Regular;
+  font-size: 13px;
+  color: #999999;
+  line-height:1;
+  display: inline;
+  position: relative;
+  padding-left: 26px;
+  cursor: pointer;}
+
+.label-checkbox100::before {
+  content: "\f00c";
+  font-family: FontAwesome;
+  font-size: 13px;
+  color: transparent;
+  display: -moz-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 2px;
+  background: #fff;
+  border: 1px solid #6675df;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.input-checkbox100:checked + .label-checkbox100::before {
+  color: #6675df;
+}
+
+
+/*========================88=========== button ============88============================*/
+
+button {	border: none;  }       /*=------------------------لعدم وجود ضل ------------------------------=*/
+ 
+.container-login100-form-btn {  /*=-----------------------لباقي الصفحات-مهم ----------------------------=*/
+  width: 100%;
+  display: -moz-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Select{ display: block;
+  width: 100%;
+  font-family: Montserrat-Regular;
+  font-size: 20px;
+  color: black;
+  line-height: 6;
+  margin-bottom: 50px;
+  } 
+.button1 {
+  display: -moz-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  background: #b30000;
+  font-family: Montserrat-Bold;
+  font-size: 12px;
+  color:#fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.button1:hover {
+/*----------------تغير اللون عند الضغط عليها------------------------------------*/
+  background:  #333333;
+}
+
+
+
+/*------------------------------------------------------------------
+[ Responsive ]*/
+
+@media (max-width: 992px) {
+  .login100-form {
+    width: 50%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .login100-more {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .login100-form {
+    width: 100%;
+  }
+
+  .login100-more {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .login100-form {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 70px;
+  }
+}
+
+
+/*------------------------------------------------------------------
+[ Alert validate ]*/
+
+.validate-input {
+  position: relative;
+}
+
+.alert-validate::before {
+  content: attr(data-validate);
+  position: absolute;
+  z-index: 100;
+  max-width: 70%;
+  background-color: #fff;
+  border: 1px solid #c80000;
+  border-radius: 2px;
+  padding: 4px 25px 4px 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 12px;
+  pointer-events: none;
+
+  font-family: Poppins-Regular;
+  color: #c80000;
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: left;
+
+  visibility: hidden;
+  opacity: 0;
+
+  -webkit-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+.alert-validate::after {
+  content: "\f12a";
+  font-family: FontAwesome;
+  display: block;
+  position: absolute;
+  z-index: 110;
+  color: #c80000;
+  font-size: 16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 18px;
+}
+
+.alert-validate:hover:before {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .alert-validate::before {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+/*=================================================================الصفحه الثانيه=============================================================================================*/
+/*=================================================================الصفحه الثانيه=============================================================================================*/
+/*=================================================================الصفحه الثانيه=============================================================================================*/
+/*=================================================================الصفحه الثانيه=============================================================================================*/
+/*=================================================================الصفحه الثانيه=============================================================================================*/
+
+
+@font-face
+{
+	font-family: 'FontAwesome';
+	src: url('fonts/fontawesome-webfont.eot?v=3.0.1');
+	src: url('fonts/fontawesome-webfont.eot?#iefix&v=3.0.1') format('embedded-opentype'),
+	     url('fonts/fontawesome-webfont.woff?v=3.0.1') format('woff'),
+	     url('fonts/fontawesome-webfont.ttf?v=3.0.1') format('truetype'),
+	     url('fonts/fontawesome-webfont.svg#FontAwesome') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face
+{
+	font-family: 'Font-Awesome-Social';
+	src: url('fonts/fontawesome-social-webfont.eot');
+	src: url('fonts/fontawesome-social-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/fontawesome-social-webfont.woff') format('woff'),
+		 url('fonts/fontawesome-social-webfont.ttf') format('truetype'),
+		 url('fonts/fontawesome-social-webfont.svg#Font-Awesome-More') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+       
+         
+html, body
+	{
+		height: 100%;
+	}
+	
+body {
+    margin: 0px;
+    padding: 0px;
+    background: #282828 url(images/images/im.jpg) repeat;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12pt;
+    font-weight: 400;
+    color: #919191;     }
+
+	
+		/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+p         /*------------system for--------------- */
+	{
+		line-height: 180%;
+  margin-top: 0;
+  	color: #857979;
+   margin: 0;
+		padding: 0;
+		letter-spacing: 0.10em;
+		font-size: 0.90em;
+	}
+	
+	a     /*-----------pharmacy mangment ------------*/
+	{
+		color: #857979;
+	}
+	
+	#logo/*----------حدود اللوجو------------*/
+	{
+		padding: 3em 0em;
+		text-transform: uppercase;
+	}
+	
+	#logo h1 a  /*-----------life ------------*/
+	{
+		text-decoration: none;
+		font-size: 1.5em;
+			color:white;
+  }
+	
+	#logo span /*-----------pharmacy ------------*/
+	{
+		color: #bc1414;
+	}
+	
+	#logo p a
+	{
+		text-decoration: none;
+	}
+
+
+/*********************************************************************************/
+/* Menu                                                                          */
+/*********************************************************************************/
+.container  /*-----------حدود menu ------------*/
+	{
+		margin: 0px auto;
+		width: 1200px;}
+	#menu
+	{
+		background: #1B1B1B ;
+		border-bottom: 5px solid #bc1414;
+	}
+	#menu ul
+	{
+		margin: 0;
+		padding: 0px 0px 0px 0px;
+		list-style: none;
+		line-height: normal;
+		text-align: center;
+	}
+	
+	#menu li
+	{
+		display: inline-block;
+	}
+	
+	#menu a
+	{
+		display: block;
+		padding: 0em 2em;
+		line-height: 80px;
+		letter-spacing: 1px;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 1em;
+		font-weight: 700;
+		color:#bc1414;
+	}
+	
+	#menu .current_page_item a
+	{
+		background: #BC1414;
+		color: #FFF;
+	}
+	
+	#menu a:hover
+	{
+		text-decoration: none;
+		color: #FFF;
+	}
+
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+
+	#banner /*************حدود الصوره*****************/
+	{
+		margin: 2em auto;
+	}
+
+/*********************************************************************************/
+/* Page                                                                          */
+/*********************************************************************************/
+
+	#page
+	{
+		overflow: hidden;
+		padding: 3em 0em;
+		border-bottom: 1px solid #363636;
+	}
+
+/*********************************************************************************/
+/* Button Style                                                                  */
+/*********************************************************************************/
+
+	.button
+	{
+		display: inline-block;
+		margin-top: 2em;
+		background: #BC1414;
+		border-radius: 5px;
+		line-height: 4em;
+		padding: 0 3em;
+		transition: all .25s ease-in-out;
+		letter-spacing: 0.25em;
+		text-decoration: none;
+		text-transform: uppercase;
+		outline: 0;
+		white-space: nowrap;
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-weight: 700;
+		font-size: 0.80em !important;
+		color: #fff !important;
+	}
+.button:hover {
+/*----------------تغير اللون عند الضغط عليها------------------------------------*/
+  background:  #333333;
+}
+		
+/*********************************************************************************/
+/* #two-column                                                                     */
+/*********************************************************************************/
+
+ #two-column /*---------------الخلفيه------------------------------------*/
+	{
+		overflow: hidden;
+		margin-bottom: 2em;
+		background: #fff;
+	}
+
+	#two-column h2 /*-------------- --two-columnاالعنوان ---------------------------------*/
+	{
+		margin: 2em 0em;
+		text-transform: uppercase;
+		font-size: 2em;
+		font-weight: 700;
+		color: black;
+	}
+	
+	#two-column #tbox1,
+	#two-column #tbox2
+	{
+		float: left;
+		width: 10px;
+		padding:50px 250px 50px 250px;}
+	/*======================================================================================================================================================================*/
+/*======================================================================================================================================================================*/
+/*============================================================================ألصفحه الثالثه===================================================================================*/
+/*=====================================================================================================================================================================*/
+/*=========================================================================================================================================================================*/
+
+
+
+
+/*********************************************************************************/
+/* Button Style                                                                  */
+/*********************************************************************************/
+.n {
+ /*--------------- search button ,,,and,,,table Button --------------------------------*/
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 10px ;
+ margin-top: 20px;
+ margin-left: 80px;
+width: 40%;
+height: 50px;
+border-radius: 90px;
+background: #333333;
+font-family: Montserrat-Bold;
+font-size: 12px;
+color:#fff;
+line-height: 1.2;
+letter-spacing: normal;
+transition: all 0.4s;}
+.n:hover {
+/*----------------تغير اللون عند الضغط عليها------------------------------------*/
+  background:  #bc1414;
+}
+
+
+/*********************************************************************************/
+/*table                                                                 */
+/*********************************************************************************/
+.container-table100 {/*----------------حدود الجدول-----------------------------------*/
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 150px;}
+.row {
+  display: table;
+  background: #fff;
+}
+
+.row.header {
+  color: black;
+  background: #1B1B1B
+
+}
+
+@media screen and (max-width: 768px) {
+  
+  .row .cell:before {
+    font-family: Poppins-Bold;
+    font-size: 12px;
+    color: #808080;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: unset !important;
+    margin-bottom: 13px;
+    content: attr(data-title);
+    min-width: 98px;
+    display: block;
+  }
+}
+
+
+/*------------------البيانات داخل الجدول-------------*/
+.cell {
+  display: table-cell;
+   
+}
+
+@media screen and (max-width: 768px) {
+  .cell {
+    display: block;
+  }
+}
+
+.row .cell { /*------------------البيانات داخل الجدول-------------*/
+  font-family: Poppins-Regular;
+  font-size: 25px;
+  color: #666666;
+   text-align:center;
+  font-weight: unset !important;
+  border-bottom: 1px solid #c3c0c0;
+}
+
+.row.header .cell { /*-----------------عنواين الجدول-------------*/
+  font-family: Poppins-Regular;
+  font-size: 20px;
+  color: #fff;
+  line-height: 2;
+  font-weight: unset !important;
+ padding-top: 19px;
+  padding-bottom: 19px;
+  text-align:center;
+  }
+.row .cell:nth-child(1) {
+  width: 250px;
+  padding-left: 40px;
+  
+}
+
+.row .cell:nth-child(2) {
+  width: 250px; 
+}
+
+.row .cell:nth-child(3) {
+  width: 250px;
+}
+
+.row .cell:nth-child(4) {
+  width: 250px;
+}
+.row .cell:nth-child(5) {
+  width: 250px;
+}
+
+.table, .row {
+  width: 100% !important;
+}
+
+.row:hover {
+  background-color: #ececff;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .row {
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 18px;
+    padding-top: 30px;
+    padding-right: 90px;
+    margin: 0;
+  }
+  
+  
+  
+
+  .table, .row, .cell {
+    width: 100% !important;
+  }
+}
+
+
+
+
+
+
+/*======================================================================================================================================================================*/
+/*======================================================================================================================================================================*/
+/*===========================================================================الصفحه الرابعه===============================================================================*/
+/*=====================================================================================================================================================================*/
+/*=========================================================================================================================================================================*/
+.row.header2 {
+  color: black;
+  background: #1B1B1B
+}
+
+.row.header2 .cell { /*-----------------عنواين الجدول-------------*/
+  font-family: Poppins-Regular;
+  font-size: 20px;
+  color: #fff;
+  line-height: 2;
+  font-weight: unset !important;
+ padding-top: 19px;
+  padding-bottom: 19px;
+  text-align:center;
+  }
+input[type=submit] {
+  background-color: BLACK;
+  color: white;
+  padding: 20px  100px;
+  border: none;
+  border-radius: 8px;
+margin:  20px 0px 40px 200px;
+
+}
+
+input[type=submit]:hover {
+  background-color: red;
+}
+
+
+.row_add {
+  width: 50%;
+    padding: 40px 50px;
+    border-radius: 100px;
+    margin-left:  500px ;
+      
+  
+}
+.row_add2 {
+  width: 50%;
+    padding: 0px 800px;
+    border-radius: 100px;
+    
+  margin-top:  0px ;
+}
+
+/*======================================================================================================================================================================*/
+/*===========================================================================االصفحه الخامسه==============================================================================*/
+/*=====================================================================================================================================================================*/
+/*=========================================================================================================================================================================*/
+.cellpic{
+
+ margin-top:40px;
+  margin-right:40px;
+ }
+ .upload{
+ 	text-align:center;
+ }
+ input, select, textarea {
+  width:100%;
+  padding: 20px 50px ;
+  border: 2px solid #ccc;
+  border-radius: 100px;
+  
+}
+input[type=submit] {
+  background-color: BLACK;
+  color: white;
+  padding: 25px 0px;
+  border: none;
+  border-radius: 8px;
+margin:  10px 0px ;
+ }
